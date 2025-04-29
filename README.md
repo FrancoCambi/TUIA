@@ -1,3 +1,7 @@
-TUIA
-Prácticas y material sobre mi carrera secundaria, Tecnicatura en Inteligencia Artificial.
+---
 
+# 📚 Tecnicatura en Inteligencia Artificial.
+
+Este repositorio contiene prácticas, ejercicios y trabajos realizados a lo largo de la carrera de **Tecnicatura en Inteligencia Artificial**. El objetivo es documentar el progreso académico.
+
+---
