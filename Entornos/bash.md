@@ -34,11 +34,11 @@ echo -e "hola\rqtal"
 ```
 
 **Ejercicio 7.15:**
-Ctrl + A -> Vuelve hacia atras todo
-Ctrl + E -> Va hacia adenalte todo
-Ctrl + K -> Borra todo lo que este a la derecha del cursor
-Alt + D -> Borra a la derecha del cursor hasta un espacio
-Ctrl W -> Como Alt + D pero hacia la izquierda.
+- Ctrl + A -> Vuelve hacia atras todo
+- Ctrl + E -> Va hacia adenalte todo
+- Ctrl + K -> Borra todo lo que este a la derecha del cursor
+- Alt + D -> Borra a la derecha del cursor hasta un espacio
+- Ctrl W -> Como Alt + D pero hacia la izquierda.
 
 **Ejercicio 7.16:**
 ```
