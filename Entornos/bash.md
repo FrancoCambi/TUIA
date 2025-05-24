@@ -153,5 +153,66 @@ cd c1
 ls
 ```
 
+**Ejercicio 7.61**
+```
+mkdir ej
+cd ej
+touch argentina francia
+mkdir semi1 semi2
+cd semi1
+touch argentina croacia
+cd ../semi2
+touch francia marruecos
+cd ../..
+```
+
+**Ejercicio 7.62**
+```
+cp -r ej/ ejcopia
+```
+
+**Ejercicio 7.63**
+```
+rm -r ej ejcopia
+```
+
+**Ejercicio 7.64**
+```
+ls -a
+```
+
+**Ejercicio 7.71**
+```
+rm *~
+rm *#
+rm *.*
+```
+
+**Ejercicio 7.72**
+```
+ls *[A-Z]*
+```
+
+**Ejercicio 7.82**
+```
+mkdir {1..999}
+```
+
+**Ejercicio**
+```
+cd /bin 
+pwd
+```
+Mostrará la ruta del directorio actual
+
+```
+pwd -P
+```
+Mostrará la ruta del directorio actual sin enlaces simbólicos
+
+
+
+
+
 
 
