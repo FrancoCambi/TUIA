@@ -198,7 +198,7 @@ ls *[A-Z]*
 mkdir {1..999}
 ```
 
-**Ejercicio**
+**Ejercicio 7.84**
 ```
 cd /bin 
 pwd
@@ -209,6 +209,53 @@ Mostrará la ruta del directorio actual
 pwd -P
 ```
 Mostrará la ruta del directorio actual sin enlaces simbólicos
+
+**Ejercicio 7.86**
+```
+mkdir ej
+ln -s ej enlace
+cd enlace
+rmdir ej
+cd enlace
+```
+Se rompe por que no existe el directorio al cual enlace hace referencia
+
+**Ejercicio 7.87**
+```
+ln -s usr/bin /bin
+```
+El primer carácter l en lrwxrwxrwx confirma que es un enlace simbólico.
+
+**Ejercicio 7.88**
+```
+mkdir -p ~/carpeta/destino
+cd ~/carpeta
+ln -s destino enlace
+mv enlace ..
+cd ../enlace
+```
+Esto da error ya que al crearse enlace, este apunta a ~/destino (ya que cuando creamos el enlace, este apunta a la ruta relativa desde donde lo creamos hasta el archivo que queremos enlazar).
+Entonces, al ~/destino no existir, da error. En definitiva, el error reside en crear el enlace parados en el directorio carpeta y no en ~.
+
+Para crear el enlace se tuvo que haber hecho: (Desde el directorio ~)
+```
+ln -s carpeta/destino enlace
+```
+
+**Ejercicio 7.91**
+Hay 4 particiones en el sistema (sda1, sda2, sdb1, sdb2), 2 unidades de almacenamiento (sda, sdb), la partición sdb1 se monto usando:
+```
+sudo mount /dev/sdb1 /mnt
+```
+El gestor de arranque se encuentra en la partición sda1.
+
+**Ejercicio 7.92**
+```
+find . -type f -name "*.txt" -exec mv {} docs/ \;
+```
+
+
+
 
 
 
