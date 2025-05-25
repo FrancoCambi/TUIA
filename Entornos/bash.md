@@ -259,6 +259,55 @@ find . -type f -name "*.txt" -exec mv {} docs/ \;
 
 
 
+**Ejercicio 7.128**
+```
+nano ej
+cat ej
+```
+
+**Ejercicio 7.129**
+```
+nano ej2
+cat ej ej2
+```
+
+**Ejercicio 7.135**
+El error se debe a que sort ordena de forma lexicográfica por defecto.
+La solución seria usar la bandera -n para ordenar de forma numérica.
+```
+sort -n numeros
+```
+
+**Ejercicio 7.136**
+Por que mundo y mundo no son consecutivas, para eliminarlas, se debería hacer:
+```
+sort archivo
+uniq archivo
+```
+
+**Ejercicio 7.142**
+```
+cut -d "," -f 2 test
+```
+
+**Ejercicio 7.144**
+No muestra Murinigo ya que entre el nombre y el apellido hay más de un espacio.
+
+**Ejercicio 7.146**
+- "xx"|"yx"
+- "(xx)*"
+- "x+"|"y+"
+- "(x)(y+)"
+- "(x+)y(x+)"
+- "(a+)(.jpg)|(a+)(.jpeg)"
+
+
+
+
+
+
+
+
 
 
 
