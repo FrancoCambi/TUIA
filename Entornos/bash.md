@@ -301,14 +301,57 @@ No muestra Murinigo ya que entre el nombre y el apellido hay más de un espacio.
 - "(x+)y(x+)"
 - "(a+)(.jpg)|(a+)(.jpeg)"
 
+**Ejercicio 7.147**`
+```
+grep "\berror\b" ej.txt
+```
+```
+grep "  " ej.txt
+```
+```
+grep -E "[0-9]+" ej.txt
+grep [0-9] ej.txt
+```
+```
+grep -E "^#" ej.txt
+```
 
+**Ejercicio 7.148**
+```
+grep -E ";." ej.txt
+```
 
+**Ejercicio 7.149**
+```
+grep -E "[A-Z]{2}[1-9]{3}[A-Z]{2}" ej.txt
+```
 
+**Ejercicio 7.150**
+```
+grep -E "\b[1-9][0-9]\-[0-9]{3}-[0-9]{3}\b" ej.txt
+```
 
+**Ejercicio 7.151**
+```
+grep -Ew "[A-Z][a-z]*" ej.txt
+```
 
+**Ejercicio 7.152**
+```
+grep -Ewo "[[:alnum:]]+@[[:alnum:]]+\.[[:alnum:]]+" ej.txt
+```
 
+**Ejercicio 7.180**
+```
+sort -n ej.txt | head -n 1
+```
 
+**Ejercicio 7.181**
+```
+head -n 3 ej.txt | tail -n 1
+```
 
+**Ejercicio 7.182**
+```
 
-
-
+```
