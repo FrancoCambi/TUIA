@@ -341,6 +341,15 @@ grep -Ew "[A-Z][a-z]*" ej.txt
 grep -Ewo "[[:alnum:]]+@[[:alnum:]]+\.[[:alnum:]]+" ej.txt
 ```
 
+**Ejercicio 7.174**
+```
+cat * > ej.txt
+```
+
+**Ejercicio 1.175**
+Lo que pasa es que se crea el archivo llamado 10 y se imprime "2" seguido de todos los nombres de todos los archivos y directorios
+del directorio actual, seguido de un "3".
+
 **Ejercicio 7.180**
 ```
 sort -n ej.txt | head -n 1
@@ -353,5 +362,5 @@ head -n 3 ej.txt | tail -n 1
 
 **Ejercicio 7.182**
 ```
-
+wc -l * | sort -nr | head -n 2 | tail -n 1
 ```
