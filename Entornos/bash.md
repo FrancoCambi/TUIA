@@ -364,3 +364,42 @@ head -n 3 ej.txt | tail -n 1
 ```
 wc -l * | sort -nr | head -n 2 | tail -n 1
 ```
+
+**Ejercicio 8.14**
+```
+chmod a-x *.py
+```
+
+**Ejercicio 8.15**
+```
+chmod a+r *.txt
+```
+
+**Ejercicio 8.17**
+```
+sudo useradd -m -s /bin/bash visitante
+```
+
+**Ejercicio 8.18**
+```
+sudo usermod -s /bin/bash visitante
+```
+
+**Ejercicio 8.20**
+```
+sudo mkdir /home/visitante
+sudo chown visitante:visitante /home/visitante
+sudo chmod 700 /home/visitante
+```
+
+**Ejercicio 9.37**
+```
+echo $PATH | tr ':' '\n'
+```
+
+**Ejercicio 9.38**
+```
+ls -lS | grep '^-' | head -n 1
+```
+
+Sin -s, no le asigna shell.
